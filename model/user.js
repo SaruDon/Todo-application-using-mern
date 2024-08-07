@@ -8,7 +8,6 @@ const userSchema = mongoose.Schema({
   },
   username :{
     type: String,
-    required:true 
   },
   password :{
     type: String,
@@ -19,7 +18,7 @@ const userSchema = mongoose.Schema({
       type: mongoose.Types.ObjectId,
       ref:"List",
     }
-  ]
+  ],
 });
 
 module.exports = mongoose.model("User",userSchema)
